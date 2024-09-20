@@ -33,18 +33,48 @@ Hardware – PCs, Cyclone II , USB flasher
 
 **Program:**
 
+Developed by: JERUSHLIN JOSE JB 
+
+RegisterNumber: 212222240039
+
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+```
+module ex2(a,b,c,d,f1);
+input a,b,c,d;
+output f1;
+assign f1=((~b & ~d) | (a & b & ~c) | (~a & b & d));
+endmodule
+```
+```
+module ex2m2(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2= ((~y&z)|(w&y)|(x&y));
+endmodule
+```
+### Logic Symbol & Truth Table 
+![image](https://github.com/user-attachments/assets/7df010aa-4cf8-438a-bd30-5b79a220de04)
 
 
-**RTL realization**
+*F2*
 
-**Output:**
+![image](https://github.com/user-attachments/assets/2c174f66-6675-48ce-83c3-1e00840dcee1)
 
-**RTL**
 
-**Timing Diagram**
+### RTL realization
+
+*F1*
+![Screenshot (194)](https://github.com/user-attachments/assets/8707cea0-bc9f-468f-9bc0-bd37968c0c83)
+*F2*
+![image](https://github.com/user-attachments/assets/d49b5279-9c6a-4366-be67-ee6d081e4df2)
+
+
+### Output:
+*F1*
+![image](https://github.com/user-attachments/assets/999c012e-3cb2-4cf7-8a15-55df7712502e)
+*F2*
+![image](https://github.com/user-attachments/assets/cd12664e-5a45-40bd-8db4-1eb97c3be2ea)
 
 **Result:**
 
